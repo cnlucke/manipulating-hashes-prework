@@ -1,7 +1,6 @@
 def first_challenge
   flavors = ""
 
-
   contacts = {
     "Jon Snow" => {
       name: "Jon",
