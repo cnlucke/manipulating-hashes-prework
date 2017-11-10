@@ -1,4 +1,6 @@
 def first_challenge
+  FLAVORS = []
+
   contacts = {
     "Jon Snow" => {
       name: "Jon",
@@ -17,7 +19,7 @@ def first_challenge
     if person == "Freddy"
       data.each do |attribute, value|
         if attribute == :favorite_icecream_flavors
-          puts "The flavors are: #{value}"
+          FLAVORS = value
           value.delete_if { |flavor| flavor == "strawberry" }
         end
       end
